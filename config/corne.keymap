@@ -39,16 +39,16 @@
                 default_layer {
                     bindings = <
 //  _______________________________________________________________      ________________________________________________________________
-// |    TAB   |    Q     |    W     |    E     |  R      |  T      |    |  Y      |  U       |  I       |  O       |  P       | BKSP     |
+// |    TAB   |    Q     |    W     |    E     |    R    |    T    |    |    Y    |    U     |    I     |    O     |    P     |    BKSP  |
     &kp TAB    &kp Q      &kp W      &kp E      &kp R     &kp T          &kp Y     &kp U      &kp I      &kp O      &kp P      &kp BSPC
 // |_______________________________________________________________      ________________________________________________________________|    
-// |    CTRL  |    A     |    S     |    D     |  F      |  G      |    |  H      |  J       |  K       |  L       |  ;       |  '       |
+// |    CTRL  |    A     |    S     |    D     |    F    |    G    |    |    H    |    J     |    K     |    L     |    ;     |    '     |
     &kp LCTRL  &kp A      &kp S      &kp D      &kp F     &kp G          &kp H     &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
 // |_______________________________________________________________      ________________________________________________________________| 
-// |    SHFT  |    Z     |    X     |    C     |  V      |  B      |    |  N      |  M       |  ,       |  .       |  /       | ESC      |
+// |    SHFT  |    Z     |    X     |    C     |    V    |    B    |    |    N    |    M     |    ,     |    .     |    /     |    ESC   |
     &kp LSHFT  &kp Z      &kp X      &kp C      &kp V     &kp B          &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp ESC
 // |_______________________________________________________________      ________________________________________________________________|
-//                                  |    ALT   | LWR     | SPC     |    | ENT     | RSE      | GUI      |
+//                                  |    ALT   |  LOWER  |  SPACE  |    |  ENTER  |   RAISE  |    GUI   |
                                      &kp LALT   &mo 1     &kp SPACE      &kp RET   &mo 2      &kp LGUI
 //                                  |__________|_________|_________|    |_________|__________|__________|
                     >;
@@ -58,48 +58,57 @@
                 lower_layer {
                     bindings = <
 //  _______________________________________________________________     __________________________________________________________________________
-// |  TAB     |  F1      |  F2      |  F3      |  F4     |  F5     |    |  ^        |  &      |  *            |  (         |  )        |   =      |
+// |    TAB   |    F1    |    F2    |    F3    |    F4   |    F5   |    |    ^      |    &    |    *          |    (       |    )      |    =     |
     &kp TAB    &kp F1     &kp F2     &kp F3     &kp F4    &kp F5         &kp CARET   &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR    &kp EQUAL
 //  _______________________________________________________________     __________________________________________________________________________|    
-// | CTRL     |  1       |  2       |  3       |  4      |  5      |    |  -        |  +      |  `            |  {         |  }        |   \      |
+// |    CTRL  |    1     |    2     |    3     |    4    |    5    |    |    -      |    +    |    `          |    {       |    }      |    \     |
     &kp LCTRL  &kp N1     &kp N2     &kp N3     &kp N4    &kp N5         &kp MINUS   &kp PLUS  &kp GRAVE       &kp LBRC     &kp RBRC    &kp BSLH
 //  _______________________________________________________________     __________________________________________________________________________|      
-// | SHFT     |  6       |  7       |  8       |  9      |  0      |    |  _        |  <      |  >            |  [         |  ]        |  "|"     |
+// |    SHFT  |    6     |    7     |    8     |    9    |    0    |    |    _      |    <    |    >          |    [       |    ]      |   "|"    |
     &kp LSHFT  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0         &kp UNDER   &kp LT    &kp GT          &kp LBKT     &kp RBKT    &kp PIPE
 //  _______________________________________________________________     __________________________________________________________________________|    
-//                                  | ALT      |         | SPC     |    | ENT       |         | GUI           |
+//                                  |    ALT   |         |    SPC  |    |   ENTER   |         |    GUI        |
                                      &kp LALT   &trans    &kp SPACE      &kp RET     &trans    &kp LGUI
 //                                  |_________ |_________|_________|    |___________|_________|_______________|
                         >;
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB     |  !     |  @   |  #     |  $     |  %    |   |            |                 | UP   | INS                             | HOME   | DEL   |
-// | CTRL     |        |      |        |        |       |   |            |  LFT            | DWN  | RGT                             | END    | PG_UP |
-// | SHFT     |        |      |        |        |       |   | CAP        | 無変換           | 変換 | かな                            |        | PG_DWN |
-//                           | ALT    |        | SPC   |   | ENT        |                 | GUI  |
-                        bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &trans       &trans            &kp UP          &kp INSERT               &kp HOME &kp DELETE
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans       &kp LEFT          &kp DOWN        &kp RIGHT                &kp END  &kp PAGE_UP
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp CAPSLOCK &trans  &trans  &trans &trans   &kp PAGE_DOWN
-                    	     &kp LALT &trans   &kp SPACE   &kp RET      &trans            &kp LGUI
+                    bindings = <
+//  _______________________________________________________________      _______________________________________________________________________________
+// |    TAB   |    !     |    @     |    #     |    $    |    %    |    |            |            |    UP       |    INS      |    HOME   |    DEL      |
+    &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT      &trans       &trans       &kp UP        &kp INSER     &kp HOME    &kp DELETE
+//  _______________________________________________________________      _______________________________________________________________________________   
+// |    CTRL  |          |          |          |         |         |    |            |  LFT       |    DWN      |    RGT      |    END    |    PG_UP    |
+    &kp LCTRL  &trans     &trans     &trans     &trans    &trans         &trans       &kp LEFT     &kp DOWN      &kp RIGHT     &kp END     &kp PAGE_UP
+//  _______________________________________________________________      _______________________________________________________________________________      
+// |    SHFT  |          |          |          |         |         |    | CAP        |            |             |             |           |    PG_DWN   |
+    &kp LSHFT  &trans     &trans     &trans     &trans    &trans         &kp CAPSLOCK &trans       &trans        &trans        &trans      &kp PAGE_DOWN
+//  _______________________________________________________________      _______________________________________________________________________________|       
+//                                  | ALT      |         |    SPC  |    |   ENTER    |            |    GUI      |
+                    	             &kp LALT   &trans    &kp SPACE      &kp RET      &trans       &kp LGUI
+//                                  |_________ |_________|_________|    |____________|____________|_____________|
                         >;
                 };
                 
                 
                 tri_layer {
-// -----------------------------------------------------------------------------------------
-// |               | CS             | VALO         |            |SYSRESET    | BOOTLOADER |   |BOOTLAODER |SYSRESET   |               |      |      |     |
-// | BTCLR         | BT1            | BT2          | BT3        |    BT4     | BT5        |   | MEDIABACK |MEDIANEXT  | PLAY/PAUSE    |      |      |     |    
-// | RGBTOG        | RGBCYCLE       |              |            |            |            |   | VOLDOWN   | VOLUP     | MUTE          |      |      |     |
-//                                                 | ALT        |            | SPC        |   |           |           | GUI           |
-                        bindings = <
-   &trans          &tog 4           &tog 5         &trans       &trans   &trans     &trans &trans  &trans          &trans &trans &trans
-   &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans     &trans     &trans   &trans &trans &trans
-   &trans &trans  &trans         &trans       &trans       &trans           &trans   &trans  &trans  &trans &trans &trans
-                    	                           &kp LALT     &trans       &kp SPACE        &kp RET     &trans      &kp LGUI
+                    bindings = <
+//  _________________________________________________________________________________________      ___________________________________________________________________________
+// |                |       CS       |     VALO     |             |             |            |    |            |            |              |          |           |           |
+    &trans           &tog 4           &tog 5         &trans        &trans        &trans            &trans       &trans       &trans         &trans     &trans      &trans
+//  _________________________________________________________________________________________      ___________________________________________________________________________
+// |    BTCLR       |    BT1         |    BT2       |    BT3      |    BT4      | BT5        |    |            |            |              |          |           |           |  
+    &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans       &trans      &trans         &trans     &trans      &trans
+//  _________________________________________________________________________________________      ___________________________________________________________________________  
+// |                |                |              |             |             |            |    |            |            |              |          |           |           |
+    &trans           &trans           &trans         &trans        &trans        &trans            &trans       &trans       &trans        &trans     &trans      &trans
+//  _________________________________________________________________________________________      ___________________________________________________________________________|
+//                                                  |    ALT      |             | SPC        |    |            |            | GUI          |   
+                    	                             &kp LALT      &trans        &kp SPACE         &kp RET      &trans       &kp LGUI
+//                                                  |_____________|_____________|____________|    |____________|____________|______________|
                         >;
                 };
         };
 };
+
