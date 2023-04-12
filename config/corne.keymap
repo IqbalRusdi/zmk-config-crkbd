@@ -77,7 +77,7 @@
                     bindings = <
 //  _______________________________________________________________      _______________________________________________________________________________
 // |    TAB   |    !     |    @     |    #     |    $    |    %    |    |            |            |    UP       |    INS      |    HOME   |    DEL      |
-    &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT      &trans       &trans       &kp UP        &kp INSER     &kp HOME    &kp DELETE
+    &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT      &trans       &trans       &kp UP        &kp INSERT    &kp HOME    &kp DELETE
 //  _______________________________________________________________      _______________________________________________________________________________   
 // |    CTRL  |          |          |          |         |         |    |            |  LFT       |    DWN      |    RGT      |    END    |    PG_UP    |
     &kp LCTRL  &trans     &trans     &trans     &trans    &trans         &trans       &kp LEFT     &kp DOWN      &kp RIGHT     &kp END     &kp PAGE_UP
