@@ -71,7 +71,7 @@
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &trans       &trans            &kp UP          &kp INSERT               &kp HOME &kp DELETE
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans       &kp LEFT          &kp DOWN        &kp RIGHT                &kp END  &kp PAGE_UP
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp CAPSLOCK &kp INT_MUHENKAN  &kp INT_HENKAN  &kp INT_KATAKANAHIRAGANA &trans   &kp PAGE_DOWN
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp CAPSLOCK &trans  &trans  &trans &trans   &kp PAGE_DOWN
                     	     &kp LALT &trans   &kp SPACE   &kp RET      &trans            &kp LGUI
                         >;
                 };
@@ -86,7 +86,7 @@
                         bindings = <
    &trans          &trans           &trans         &trans       &trans   &trans      &trans &trans  &trans          &trans &trans &trans
    &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans     &trans     &trans   &trans &trans &trans
-   &rgb_ug RGB_TOG &rgb_ug RGB_EFR  &trans         &trans       &trans       &trans           &trans   &trans   &trans  &trans &trans &trans
+   &trans &trans  &trans         &trans       &trans       &trans           &trans   &trans   &trans  &trans &trans &trans
                     	                           &kp LALT     &trans       &kp SPACE        &kp RET     &trans      &kp LGUI
                         >;
                 };
