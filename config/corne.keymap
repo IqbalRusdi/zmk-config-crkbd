@@ -113,18 +113,22 @@
                 
                 csgo_layer {
                     bindings = <
+
 //  _______________________________________________________________      ________________________________________________________________
-// |    TAB   |    Q     |    W     |    E     |    R    |    T    |    |    Y    |    U     |    I     |    O     |    P     |    BKSP  |
-    &kp TAB    &kp Q      &kp W      &kp E      &kp R     &kp T          &kp Y     &kp U      &kp I      &kp O      &kp P      &kp BSPC
+// |    TAB   |    1     |    2     |    3     |    4    |    5    |    |    N    |    M     |    ,     |    .     |  DFLT    |    ESC   |
+// |    TAB   |    1     |    2     |    3     |    4    |    5    |    |    N    |    M     |    ,     |    .     |  DFLT    |    ESC   |
+    &kp TAB    &kp N1     &kp N2     &kp N3     &kp N4    &kp N5         &kp N     &kp M      &kp COMMA  &kp DOT    &tog 0     &kp ESC
+//  _______________________________________________________________      ________________________________________________________________
+// |    CTRL  | PRVS WPN |    UP    |   USE    | RELOAD  |    T    |    |    Y    |    U     |    I     |    O     |    P     |    BKSP  |
+// |    CTRL  |    Q     |    W     |    E     |    R    |    T    |    |    Y    |    U     |    I     |    O     |    P     |    BKSP  |
+    &kp LCTRL  &kp Q      &kp W      &kp E      &kp R     &kp T          &kp Y     &kp U      &kp I      &kp O      &kp P      &kp BSPC
 // |_______________________________________________________________      ________________________________________________________________|    
-// |    CTRL  |    A     |    S     |    D     |    F    |    G    |    |    H    |    J     |    K     |    L     |    ;     |    '     |
-    &kp LCTRL  &kp A      &kp S      &kp D      &kp F     &kp G          &kp H     &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
-// |_______________________________________________________________      ________________________________________________________________| 
-// |    SHFT  |    Z     |    X     |    C     |    V    |    B    |    |    N    |    M     |    ,     |    .     |    /     |    ESC   |
-    &kp LSHFT  &kp Z      &kp X      &kp C      &kp V     &kp B          &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp ESC
+// |    WALK  |  LEFT    |  DOWN    |  RIGHT   |  FLASH  |  THROW  |    |    H    |    J     |    K     |    L     |    ;     |    '     |
+// |    SHFT  |    A     |    S     |    D     |    F    |    G    |    |    H    |    J     |    K     |    L     |    ;     |    '     |
+    &kp LSHFT  &kp A      &kp S      &kp D      &kp F     &kp G          &kp H     &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
 // |_______________________________________________________________      ________________________________________________________________|
-//                                  |    ALT   |  LOWER  |  SPACE  |    |  ENTER  |   RAISE  |    GUI   |
-                                     &kp LALT   &mo 1     &kp SPACE      &kp RET   &mo 2      &kp LGUI
+//                                  |    C     |    V    |  SPACE  |    |   BUY   |   RAISE  |    GUI   |
+                                     &kp C      &kp V     &kp SPACE      &kp B     &mo 2      &kp LGUI
 //                                  |__________|_________|_________|    |_________|__________|__________|
                     >;
                 };
