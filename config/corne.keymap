@@ -119,17 +119,17 @@
 // |    TAB   |    1     |    2     |    3     |    4    |    J    |    |    7    |    8     |    9     |    .     | DFLT LYR |    CS    |
     &kp TAB    &kp N1     &kp N2     &kp N3     &kp N4    &kp J          &kp N7    &kp N8     &kp N9     &kp DOT    &tog 0     &tog 4
 //  _______________________________________________________________      ________________________________________________________________
-// | MAP/DECOY| PRVS WPN |    UP    |   USE    | RELOAD  |JUMPTHROW|    |    4    |    5     |    6     | INVENTORY|    P     | CONSOLE  |
-// | CTRL/H   |    Q     |    W     |    E     |    R    |    T    |    |    4    |    5     |    6     |    I     |    P     |     '    |
-    &mt LCTRL H &kp Q     &kp W      &kp E      &kp R     &kp T          &kp N4    &kp N5     &kp N6     &kp I      &kp P      &kp SQT
+// |    MAP   | PRVS WPN |    UP    |   USE    | RELOAD  |JUMPTHROW|    |    4    |    5     |    6     | INVENTORY|    P     | CONSOLE  |
+// |    CTRL  |    Q     |    W     |    E     |    R    |    T    |    |    4    |    5     |    6     |    I     |    P     |     '    |
+    &kp LCTRL  &kp Q      &kp W      &kp E      &kp R     &kp T          &kp N4    &kp N5     &kp N6     &kp I      &kp P      &kp SQT
 // |_______________________________________________________________      ________________________________________________________________|    
 // |    WALK  |  LEFT    |  DOWN    |  RIGHT   |  FLASH  |  THROW  |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
 // |    SHFT  |    A     |    S     |    D     |    F    |    G    |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
     &kp LSHFT  &kp A      &kp S      &kp D      &kp F     &kp G          &kp N1    &kp N2     &kp N3     &kp L      &kp SEMI   &kp ESC
 // |_______________________________________________________________      ________________________________________________________________|
-//                                  |   MIC    |  CROUCH |JUMP/SMOKE|   |   BUY   |   COMM   |  DECOY   |
-//                                  |    C     |    V    |SPACE/LALT|   |   BUY   |    Z     |    H     |
-                                     &kp C      &kp V     &mt LALT SPACE &kp B     &kp Z      &kp H
+//                                  |   MIC    |  CROUCH |SMOKE/DECOY|  |   BUY   |   COMM   |  DECOY   |
+//                                  |    C     |    V    |   H/LALT|    |   BUY   |    Z     |    H     |
+                                     &kp C      &kp V     &mt LALT H     &kp B     &kp Z      &kp H
 //                                  |__________|_________|_________|    |_________|__________|__________|
                     >;
                 };
