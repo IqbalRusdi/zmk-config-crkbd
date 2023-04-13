@@ -115,20 +115,21 @@
                     bindings = <
 
 //  _______________________________________________________________      ________________________________________________________________
-// |    TAB   |    1     |    2     |    3     |    4    |    5    |    |    N    |    M     |    ,     |    .     |  DFLT    |    ESC   |
-// |    TAB   |    1     |    2     |    3     |    4    |    5    |    |    N    |    M     |    ,     |    .     |  DFLT    |    ESC   |
-    &kp TAB    &kp N1     &kp N2     &kp N3     &kp N4    &kp N5         &kp N     &kp M      &kp COMMA  &kp DOT    &tog 0     &kp ESC
+// |SCOREBOARD|    1     |    2     |    3     |    4    |  DECOY  |    |    7    |    8     |    9     |    .     | DFLT LYR |    CS    |
+// |    TAB   |    1     |    2     |    3     |    4    |    H    |    |    7    |    8     |    9     |    .     | DFLT LYR |    CS    |
+    &kp TAB    &kp N1     &kp N2     &kp N3     &kp N4    &kp H          &kp N7    &kp N8     &kp N9     &kp DOT    &tog 0     &tog 4
 //  _______________________________________________________________      ________________________________________________________________
-// |    CTRL  | PRVS WPN |    UP    |   USE    | RELOAD  |    T    |    |    Y    |    U     |    I     |    O     |    P     |    BKSP  |
-// |    CTRL  |    Q     |    W     |    E     |    R    |    T    |    |    Y    |    U     |    I     |    O     |    P     |    BKSP  |
-    &kp LCTRL  &kp Q      &kp W      &kp E      &kp R     &kp T          &kp Y     &kp U      &kp I      &kp O      &kp P      &kp BSPC
+// |    MAP   | PRVS WPN |    UP    |   USE    | RELOAD  |  JUMP   |    |    4    |    5     |    6     |    I     |    P     | CONSOLE  |
+// |    CTRL  |    Q     |    W     |    E     |    R    |  SPACE  |    |    4    |    5     |    6     |    I     |    P     |     '    |
+    &kp LCTRL  &kp Q      &kp W      &kp E      &kp R     &kp SPACE      &kp N4    &kp N5     &kp N6     &kp O      &kp P      &kp SQT
 // |_______________________________________________________________      ________________________________________________________________|    
-// |    WALK  |  LEFT    |  DOWN    |  RIGHT   |  FLASH  |  THROW  |    |    H    |    J     |    K     |    L     |    ;     |    '     |
-// |    SHFT  |    A     |    S     |    D     |    F    |    G    |    |    H    |    J     |    K     |    L     |    ;     |    '     |
-    &kp LSHFT  &kp A      &kp S      &kp D      &kp F     &kp G          &kp H     &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+// |    WALK  |  LEFT    |  DOWN    |  RIGHT   |  FLASH  |  THROW  |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
+// |    SHFT  |    A     |    S     |    D     |    F    |    G    |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
+    &kp LSHFT  &kp A      &kp S      &kp D      &kp F     &kp G          &kp N1    &kp N2     &kp N3     &kp L      &kp SEMI   &kp ESC
 // |_______________________________________________________________      ________________________________________________________________|
-//                                  |    C     |    V    |  SPACE  |    |   BUY   |   RAISE  |    GUI   |
-                                     &kp C      &kp V     &kp SPACE      &kp B     &mo 2      &kp LGUI
+//                                  |   MIC    |  CROUCH |   NADE  |    |   BUY   |          |          |
+//                                  |    C     |    V    |    T    |    |   BUY   |          |          |
+                                     &kp C      &kp V     &kp T          &kp B     &trans     &trans
 //                                  |__________|_________|_________|    |_________|__________|__________|
                     >;
                 };
