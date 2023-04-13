@@ -115,21 +115,21 @@
                     bindings = <
 
 //  _______________________________________________________________      ________________________________________________________________
-// |SCOREBOARD|    1     |    2     |    3     |    4    |  DECOY  |    |    7    |    8     |    9     |    .     | DFLT LYR |    CS    |
-// |    TAB   |    1     |    2     |    3     |    4    |    H    |    |    7    |    8     |    9     |    .     | DFLT LYR |    CS    |
-    &kp TAB    &kp N1     &kp N2     &kp N3     &kp N4    &kp H          &kp N7    &kp N8     &kp N9     &kp DOT    &tog 0     &tog 4
+// |SCOREBOARD|    1     |    2     |    3     |    4    | C4 DROP |    |    7    |    8     |    9     |    .     | DFLT LYR |    CS    |
+// |    TAB   |    1     |    2     |    3     |    4    |    J    |    |    7    |    8     |    9     |    .     | DFLT LYR |    CS    |
+    &kp TAB    &kp N1     &kp N2     &kp N3     &kp N4    &kp J          &kp N7    &kp N8     &kp N9     &kp DOT    &tog 0     &tog 4
 //  _______________________________________________________________      ________________________________________________________________
-// |    MAP   | PRVS WPN |    UP    |   USE    | RELOAD  |  JUMP   |    |    4    |    5     |    6     |    I     |    P     | CONSOLE  |
-// |    CTRL  |    Q     |    W     |    E     |    R    |  SPACE  |    |    4    |    5     |    6     |    I     |    P     |     '    |
-    &kp LCTRL  &kp Q      &kp W      &kp E      &kp R     &kp SPACE      &kp N4    &kp N5     &kp N6     &kp O      &kp P      &kp SQT
+// | MAP/DECOY| PRVS WPN |    UP    |   USE    | RELOAD  |JUMPTHROW|    |    4    |    5     |    6     | INVENTORY|    P     | CONSOLE  |
+// | CTRL/H   |    Q     |    W     |    E     |    R    |    T    |    |    4    |    5     |    6     |    I     |    P     |     '    |
+    &mt LCTRL H &kp Q     &kp W      &kp E      &kp R     &kp T          &kp N4    &kp N5     &kp N6     &kp I      &kp P      &kp SQT
 // |_______________________________________________________________      ________________________________________________________________|    
 // |    WALK  |  LEFT    |  DOWN    |  RIGHT   |  FLASH  |  THROW  |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
 // |    SHFT  |    A     |    S     |    D     |    F    |    G    |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
     &kp LSHFT  &kp A      &kp S      &kp D      &kp F     &kp G          &kp N1    &kp N2     &kp N3     &kp L      &kp SEMI   &kp ESC
 // |_______________________________________________________________      ________________________________________________________________|
-//                                  |   MIC    |  CROUCH |   NADE  |    |   BUY   |          |          |
-//                                  |    C     |    V    |    T    |    |   BUY   |          |          |
-                                     &kp C      &kp V     &kp T          &kp B     &trans     &trans
+//                                  |   MIC    |  CROUCH |JUMP/SMOKE|   |   BUY   |   COMM   |  DECOY   |
+//                                  |    C     |    V    |SPACE/LALT|   |   BUY   |    Z     |    H     |
+                                     &kp C      &kp V     &mt LALT SPACE &kp B     &kp Z      &kp H
 //                                  |__________|_________|_________|    |_________|__________|__________|
                     >;
                 };
@@ -138,17 +138,21 @@
                 valorant_layer {
                     bindings = <
 //  _______________________________________________________________      ________________________________________________________________
-// |    TAB   |    Q     |    W     |    E     |    R    |    T    |    |    Y    |    U     |    I     |    O     |    P     |    BKSP  |
-    &kp TAB    &kp Q      &kp W      &kp E      &kp R     &kp T          &kp Y     &kp U      &kp I      &kp O      &kp P      &kp BSPC
+// |SCOREBOARD|    1     |    2     |    3     |    4    |RADIO CMD|    |    7    |    8     |    9     |    .     | DFLT LYR | VALO LYR |
+// |    TAB   |    1     |    2     |    3     |    4    |    P    |    |    7    |    8     |    9     |    .     | DFLT LYR |   VALO   |
+    &kp TAB    &kp N1     &kp N2     &kp N3     &kp N4    &kp P          &kp N7    &kp N8     &kp N9     &kp DOT    &tog 0     &tog 5
+//  _______________________________________________________________      ________________________________________________________________
+// | MAP/ZOOM | PRVS WPN |    UP    |   USE    | RELOAD  |   ULTI  |    |    4    |    5     |    6     |    F2    |    F3    | CONSOLE  |
+// |  LALT/Z  |    Q     |    W     |    E     |    R    |    T    |    |    4    |    5     |    6     |    F2    |    F3    |     '    |
+    &mt LALT Z &kp Q      &kp W      &kp E      &kp R     &kp T          &kp N4    &kp N5     &kp N6     &kp F2     &kp F3      &kp SQT
 // |_______________________________________________________________      ________________________________________________________________|    
-// |    CTRL  |    A     |    S     |    D     |    F    |    G    |    |    H    |    J     |    K     |    L     |    ;     |    '     |
-    &kp LCTRL  &kp A      &kp S      &kp D      &kp F     &kp G          &kp H     &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
-// |_______________________________________________________________      ________________________________________________________________| 
-// |    SHFT  |    Z     |    X     |    C     |    V    |    B    |    |    N    |    M     |    ,     |    .     |    /     |    ESC   |
-    &kp LSHFT  &kp Z      &kp X      &kp C      &kp V     &kp B          &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp ESC
+// |    WALK  |  LEFT    |  DOWN    |  RIGHT   | PING/MIC|  THROW  |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
+// |    SHFT  |    A     |    S     |    D     | F/LCTRL |    G    |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
+    &kp LSHFT  &kp A      &kp S      &kp D      &mt LCTRL F &kp G        &kp N1    &kp N2     &kp N3     &kp L      &kp SEMI   &kp ESC
 // |_______________________________________________________________      ________________________________________________________________|
-//                                  |    ALT   |  LOWER  |  SPACE  |    |  ENTER  |   RAISE  |    GUI   |
-                                     &kp LALT   &mo 1     &kp SPACE      &kp RET   &mo 2      &kp LGUI
+//                                  |  SKILL 1 |  CROUCH |   JUMP  |    |   BUY   |          |          |
+//                                  |    C     |    V    |  SPACE  |    |   BUY   |          |          |
+                                     &kp C      &kp V     &kp SPACE      &kp B     &trans     &trans
 //                                  |__________|_________|_________|    |_________|__________|__________|
                     >;
                 };
