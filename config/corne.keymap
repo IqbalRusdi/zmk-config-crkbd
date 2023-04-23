@@ -146,13 +146,13 @@
 // |  LALT/Z  |    Q     |    W     |    E     |    R    |    T    |    |    4    |    5     |    6     |    F2    |    F3    |     '    |
     &mt LALT Z &kp Q      &kp W      &kp E      &kp R     &kp T          &kp N4    &kp N5     &kp N6     &kp F2     &kp F3      &kp SQT
 // |_______________________________________________________________      ________________________________________________________________|    
-// |    WALK  |  LEFT    |  DOWN    |  RIGHT   | PING/MIC|  THROW  |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
-// |    SHFT  |    A     |    S     |    D     | F/LCTRL |    G    |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
-    &kp LSHFT  &kp A      &kp S      &kp D      &mt LCTRL F &kp G        &kp N1    &kp N2     &kp N3     &kp L      &kp SEMI   &kp ESC
+// |    WALK  |  LEFT    |  DOWN    |  RIGHT   |   PING  |  THROW  |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
+// |    SHFT  |    A     |    S     |    D     |    F    |    G    |    |    1    |    2     |    3     |    L     |    ;     |   ESC    |
+    &kp LSHFT  &kp A      &kp S      &kp D      &kp F     &kp G        &kp N1    &kp N2     &kp N3     &kp L      &kp SEMI   &kp ESC
 // |_______________________________________________________________      ________________________________________________________________|
-//                                  |  SKILL 1 |  CROUCH |   JUMP  |    |   BUY   |          |          |
-//                                  |    C     |    V    |  SPACE  |    |   BUY   |          |          |
-                                     &kp C      &kp V     &kp SPACE      &kp B     &trans     &trans
+//                                  |SKILL1/MIC|  CROUCH |   JUMP  |    |   BUY   |          |          |
+//                                  | C/LCTRL  |    V    |  SPACE  |    |   BUY   |          |          |
+                                     &mt LCTRL C  &kp V   &kp SPACE      &kp B     &trans     &kp LCTRL
 //                                  |__________|_________|_________|    |_________|__________|__________|
                     >;
                 };
