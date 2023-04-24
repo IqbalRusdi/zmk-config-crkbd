@@ -58,8 +58,8 @@
                 lower_layer {
                     bindings = <
 //  _______________________________________________________________     __________________________________________________________________________
-// |    TAB   |    F1    |    F2    |    F3    |    F4   |    F5   |    |    ^      |    &    |    *          |    (       |    )      |    =     |
-    &kp TAB    &kp F1     &kp F2     &kp F3     &kp F4    &kp F5         &kp CARET   &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR    &kp EQUAL
+// |   BKSP   |    F1    |    F2    |    F3    |    F4   |    F5   |    |    ^      |    &    |    *          |    (       |    )      |    =     |
+    &kp BSPC   &kp F1     &kp F2     &kp F3     &kp F4    &kp F5         &kp CARET   &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR    &kp EQUAL
 //  _______________________________________________________________     __________________________________________________________________________|    
 // |    CTRL  |    1     |    2     |    3     |    4    |    5    |    |    -      |    +    |    `          |    {       |    }      |    \     |
     &kp LCTRL  &kp N1     &kp N2     &kp N3     &kp N4    &kp N5         &kp MINUS   &kp PLUS  &kp GRAVE       &kp LBRC     &kp RBRC    &kp BSLH
@@ -67,8 +67,8 @@
 // |    SHFT  |    6     |    7     |    8     |    9    |    0    |    |    _      |    <    |    >          |    [       |    ]      |   "|"    |
     &kp LSHFT  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0         &kp UNDER   &kp LT    &kp GT          &kp LBKT     &kp RBKT    &kp PIPE
 //  _______________________________________________________________     __________________________________________________________________________|    
-//                                  |    ALT   |         |    SPC  |    |   ENTER   |         |    GUI        |
-                                     &kp LALT   &trans    &kp SPACE      &kp RET     &trans    &kp LGUI
+//                                  |    ALT   |         |    DEL  |    |   ENTER   |         |    GUI        |
+                                     &kp LALT   &trans    &kp DELETE     &kp RET     &trans    &kp LGUI
 //                                  |_________ |_________|_________|    |___________|_________|_______________|
                         >;
                 };
