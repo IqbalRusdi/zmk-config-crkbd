@@ -30,6 +30,10 @@
                 if-layers = <1 2>;
                 then-layer = <3>;
             };
+        };
+        
+        conditional_layers {
+            compatible = "zmk,conditional-layers";
             trimac_layer {
                 if-layers = <7 8>;
                 then-layer = <9>;
