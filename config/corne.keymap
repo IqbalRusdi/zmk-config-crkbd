@@ -30,10 +30,10 @@
                 if-layers = <1 2>;
                 then-layer = <3>;
             };
-            trimac_layer {
-                if-layers = <7 8>;
-                then-layer = <9>;
-            };
+//           trimac_layer {
+//                if-layers = <7 8>;
+//                then-layer = <9>;
+//            };
         };
         
         
@@ -86,8 +86,8 @@
                 raise_layer {
                     bindings = <
 //  _______________________________________________________________      _______________________________________________________________________________
-// |    TAB   |    !     |    @     |    #     |    $    |    %    |    |            |    HOME    |    UP       |    END      |    INS    |    DEL      |
-    &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT      &trans       &kp HOME       &kp UP      &kp END       &kp INSERT    &kp DELETE
+// |    TAB   |    !     |    @     |    #     |    $    |    %    |    |    MACOS   |    HOME    |    UP       |    END      |    INS    |    DEL      |
+    &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT      &tog 6       &kp HOME       &kp UP      &kp END       &kp INSERT    &kp DELETE
 //  _______________________________________________________________      _______________________________________________________________________________   
 // |    CTRL  |          |          |          |         |         |    |            |  LFT       |    DWN      |    RGT      |           |    PG_UP    |
     &kp LCTRL  &trans     &trans     &trans     &trans    &trans         &trans       &kp LEFT     &kp DOWN      &kp RIGHT     &trans      &kp PAGE_UP
@@ -106,8 +106,8 @@
                 tri_layer {
                     bindings = <
 //  _________________________________________________________________________________________      ___________________________________________________________________________
-// |                |       CS       |     VALO     |             |  WINDOWS    |   MACOS    |    |            |            |              |          |           |           |
-    &trans           &tog 4           &tog 5         &trans        &tog 0        &tog 6            &trans       &trans       &trans         &trans     &trans      &trans
+// |                |       CS       |     VALO     |             |             |            |    |            |            |              |          |           |           |
+    &trans           &tog 4           &tog 5         &trans        &trans        &trans            &trans       &trans       &trans         &trans     &trans      &trans
 //  _________________________________________________________________________________________      ___________________________________________________________________________
 // |    BTCLR       |    BT1         |    BT2       |    BT3      |    BT4      | BT5        |    |            |            |              |          |           |           |  
     &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans       &trans      &trans         &trans     &trans      &trans
@@ -216,8 +216,8 @@
                 raisemac_layer {
                    bindings = <
 //  _______________________________________________________________      _______________________________________________________________________________
-// |    TAB   |    !     |    @     |    #     |    $    |    %    |    |            |    HOME    |    UP       |    END      |    INS    |    DEL      |
-    &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT      &trans       &kp HOME     &kp UP        &kp END       &kp INSERT  &kp DELETE
+// |    TAB   |    !     |    @     |    #     |    $    |    %    |    |   WINDOWS  |    HOME    |    UP       |    END      |    INS    |    DEL      |
+    &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT      &tog 0       &kp HOME     &kp UP        &kp END       &kp INSERT  &kp DELETE
 //  _______________________________________________________________      _______________________________________________________________________________   
 // |    CTRL  |          |          |          |         |         |    |            |  LFT       |    DWN      |    RGT      |           |    PG_UP    |
     &kp LCTRL  &trans     &trans     &trans     &trans    &trans         &trans       &kp LEFT     &kp DOWN      &kp RIGHT     &trans      &kp PAGE_UP
@@ -231,25 +231,6 @@
                        >;
                 };
                 
- 
-// LAYER 9 - MACOS ____________________________________________________________________________________________________________________________
-                trimac_layer {
-                    bindings = <
-//  _________________________________________________________________________________________      ___________________________________________________________________________
-// |                |       CS       |     VALO     |             |  WINDOWS    |   MACOS    |    |            |            |              |          |           |           |
-    &trans           &tog 4           &tog 5         &trans        &tog 0        &tog 6            &trans       &trans       &trans         &trans     &trans      &trans
-//  _________________________________________________________________________________________      ___________________________________________________________________________
-// |    BTCLR       |    BT1         |    BT2       |    BT3      |    BT4      | BT5        |    |            |            |              |          |           |           |  
-    &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans       &trans      &trans         &trans     &trans      &trans
-//  _________________________________________________________________________________________      ___________________________________________________________________________  
-// |                |                |              |             |             |            |    |            |            |              |          |           |           |
-    &trans           &trans           &trans         &trans        &trans        &trans            &trans       &trans       &trans        &trans     &trans      &trans
-//  _________________________________________________________________________________________      ___________________________________________________________________________|
-//                                                  |    GUI      |             | SPC        |    |            |            |    ALT       |   
-                    	                             &kp LGUI      &trans        &kp SPACE         &kp RET      &trans       &kp LALT
-//                                                  |_____________|_____________|____________|    |____________|____________|______________|
-                        >;
-                };
 
         };
 };
